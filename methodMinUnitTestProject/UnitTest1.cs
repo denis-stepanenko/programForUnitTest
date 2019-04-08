@@ -11,7 +11,7 @@ namespace methodMinUnitTestProject
         public void methodMinTest()
         {
             int min = Program.min(7, 9, 6);
-            Assert.AreEqual(6, min);
+            Assert.AreEqual(9, min);
         }
     }
 }
