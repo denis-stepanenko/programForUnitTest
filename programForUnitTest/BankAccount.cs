@@ -24,11 +24,12 @@ namespace programForUnitTest
 
         public void Debit(double amount)
         {
+            
             if(amount == 0)
             {
                 throw new ArgumentOutOfRangeException("amount", amount, DebitAmountEqualZeroMessage);
             }
-
+            
             if(amount < 0)
             {
                 throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);

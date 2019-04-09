@@ -40,7 +40,10 @@ namespace programForUnitTest.Tests
             catch (ArgumentOutOfRangeException e)
             {
                 StringAssert.Contains(e.Message, BankAccount.DebitAmountLessThanZeroMessage);
+                return;
             }
+
+            Assert.Fail("Не происходит проверка на отрицательные значения при вкладе");
         }
 
         [TestMethod]
@@ -60,7 +63,10 @@ namespace programForUnitTest.Tests
             catch(ArgumentOutOfRangeException e)
             {
                 StringAssert.Contains(e.Message, BankAccount.DebitAmountEqualZeroMessage);
+                return;
             }
+
+            Assert.Fail("Не происходит проверка на ноль при вкладе");
         }
 
         [TestMethod]
