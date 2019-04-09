@@ -6,7 +6,7 @@ namespace programForUnitTest
     {
         static void Main(string[] args)
         {
-            Console.Write(min(5, 7, 1));
+            Console.WriteLine(min(7, 4, 1));
             Console.ReadLine();
         }
 

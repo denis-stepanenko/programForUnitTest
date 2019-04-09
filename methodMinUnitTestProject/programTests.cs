@@ -4,7 +4,7 @@ using programForUnitTest;
 namespace programForUnitTest.Tests
 {
     [TestClass]
-    public class programTests
+    public class ProgramTests
     {
         [TestMethod]
         public void min_796_6returned()

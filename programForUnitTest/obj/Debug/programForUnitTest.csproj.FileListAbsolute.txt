@@ -17,3 +17,4 @@ C:\Users\151\Desktop\git\programForUnitTest\programForUnitTest\obj\Debug\program
 C:\Users\151\Desktop\git\programForUnitTest\programForUnitTest\obj\Debug\programForUnitTest.exe
 C:\Users\151\Desktop\git\programForUnitTest\programForUnitTest\obj\Debug\programForUnitTest.pdb
 C:\Users\151\Desktop\git\programForUnitTest\programForUnitTest\obj\Debug\programForUnitTest.csprojAssemblyReference.cache
+C:\Users\userasup20\Desktop\git\programForUnitTest\programForUnitTest\obj\Debug\programForUnitTest.csprojResolveAssemblyReference.cache
