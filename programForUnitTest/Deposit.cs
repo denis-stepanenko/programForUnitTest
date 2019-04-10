@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace programForUnitTest
 {
-    public class BankAccount
+    public class Deposit
     {
         public const string DebitAmountEqualZeroMessage = "Размер вклада не может быть нулевым";
         public const string DebitAmountLessThanZeroMessage = "Размер вклада не может быть отрицательным";
@@ -15,14 +15,14 @@ namespace programForUnitTest
         public double DepositPercentage { get; private set; }
         public double Balance { get; private set; }
 
-        public BankAccount(string owner, double beginningBalance, double depositPercentage)
+        public Deposit(string owner, double beginningBalance, double depositPercentage)
         {
             Owner = owner;
             Balance = beginningBalance;
             DepositPercentage = depositPercentage;
         }
 
-        public void Debit(double amount)
+        public void Put(double amount)
         {
             
             if(amount == 0)
@@ -40,7 +40,7 @@ namespace programForUnitTest
 
         public void ChargeInterest()
         {
-            Balance += Balance / 100 * DepositPercentage;
+            Balance += Balance * (DepositPercentage / 100);
         }
     }
 }

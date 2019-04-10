@@ -29,9 +29,5 @@ C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\
 C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\programForUnitTest.Tests.dll
 C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\programForUnitTest.Tests.pdb
-C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\programForUnitTest.exe
 C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\programForUnitTest.pdb
-C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-C:\Users\userasup20\Desktop\git\programForUnitTest\methodMinUnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml

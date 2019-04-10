@@ -6,12 +6,11 @@ namespace programForUnitTest
     {
         static void Main(string[] args)
         {
-            BankAccount account = new BankAccount("Mr. Bryan Walton", 0, 5);
-            account.Debit(100);
-            account.ChargeInterest();
-            Console.WriteLine(account.Balance);
+            Deposit deposit = new Deposit("Mr. Bryan Walton", 0, 5);
+            deposit.Put(100);
+            deposit.ChargeInterest();
+            Console.WriteLine(deposit.Balance);
             Console.ReadLine();
-
         }
 
         public static int min(int a, int b, int c)

@@ -5,10 +5,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace programForUnitTest.Tests
 {
     [TestClass]
-    public class BankAccountTests
+    public class DepositTests
     {
         public static int counter = 1;
-        public static BankAccount account;
+        public static Deposit deposit;
 
         // Запускается при старте тестирующего класса
         [ClassInitialize]
@@ -23,7 +23,7 @@ namespace programForUnitTest.Tests
         {
             Debug.WriteLine($"Запуск теста {counter}");
             counter += 1;
-            account = new BankAccount("Mr. Bryan Walton", 0, 5);
+            deposit = new Deposit("Mr. Bryan Walton", 0, 5);
         }
         
         // Запускается при завершении каждого тестирующего метода
@@ -41,10 +41,10 @@ namespace programForUnitTest.Tests
             double expected = 4.55;
             
             // Act
-            account.Debit(debitAmount);
+            deposit.Put(debitAmount);
 
             // Assert
-            double actual = account.Balance;
+            double actual = deposit.Balance;
             Assert.AreEqual(expected, actual, "Аккаунт неправильно считает вклад");
         }
 
@@ -57,12 +57,12 @@ namespace programForUnitTest.Tests
             // Act
             try
             {
-                account.Debit(debitAmount);
+                deposit.Put(debitAmount);
             }
             // Assert
             catch (ArgumentOutOfRangeException e)
             {
-                StringAssert.Contains(e.Message, BankAccount.DebitAmountLessThanZeroMessage);
+                StringAssert.Contains(e.Message, Deposit.DebitAmountLessThanZeroMessage);
                 return;
             }
 
@@ -78,12 +78,12 @@ namespace programForUnitTest.Tests
             // Act
             try
             {
-                account.Debit(debitAmount);
+                deposit.Put(debitAmount);
             }
             // Assert
             catch(ArgumentOutOfRangeException e)
             {
-                StringAssert.Contains(e.Message, BankAccount.DebitAmountEqualZeroMessage);
+                StringAssert.Contains(e.Message, Deposit.DebitAmountEqualZeroMessage);
                 return;
             }
 
@@ -94,15 +94,15 @@ namespace programForUnitTest.Tests
         public void ChargeInterest_WithValidParameters_UpdatesBalance()
         {
             // Arrange
-            double debitAmount = 100.00;
-            double expected = 105.00;
+            double debitAmount = 256.50;
+            double expected = 269.3250;
 
             // Act
-            account.Debit(debitAmount);
-            account.ChargeInterest();
+            deposit.Put(debitAmount);
+            deposit.ChargeInterest();
 
             // Assert
-            double actual = account.Balance;
+            double actual = deposit.Balance;
             Assert.AreEqual(expected, actual, "Процент вклада начисляется неверно");
         }
     }
