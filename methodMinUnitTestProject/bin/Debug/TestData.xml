@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserDetails>
+  <User username="Антон" phone="12345678900" email="noname@example.com"/>
+  <User username="Иван" phone="12345678901" email="noname@example.com"/>
+</UserDetails>
